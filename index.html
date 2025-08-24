@@ -24,24 +24,25 @@
     </header>
 
     <main class="container">
-        <section class="new-task">
-            <input id="taskInput" type="text" placeholder="Add a task… (Enter to add)" autocomplete="off" />
-            <button id="addBtn" aria-label="Add task">Add</button>
-        </section>
+    <!-- Wrap everything in a widget so script.js initializes it -->
+    <section class="todo-widget" data-list-key="todo_general">
+      <section class="new-task">
+        <input id="taskInput" class="taskInput" type="text" placeholder="Add a task… (Enter to add)" autocomplete="off" />
+        <button id="addBtn" class="addBtn" aria-label="Add task">Add</button>
+      </section>
 
-        <section>
-            <ul id="taskList" class="task-list" aria-live="polite"></ul>
-        </section>
+      <section>
+        <ul id="taskList" class="task-list taskList" aria-live="polite"></ul>
+      </section>
 
-        <footer>
-            <button id="clearCompletedBtn" class="ghost">Clear completed</button>
-            <span id="counter" class="counter">0 tasks</span>
-
-        </footer>
-
-
-    </main>
+      <footer class="footer">
+        <button id="clearCompletedBtn" class="ghost clearCompletedBtn">Clear completed</button>
+        <span id="counter" class="counter">0 tasks</span>
+      </footer>
+    </section>
+  </main>
 
     <script defer src="./script.js"></script>
 </body>
+
 </html>
