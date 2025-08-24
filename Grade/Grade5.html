@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grade 5 — Tasks</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Grade 5 — Tasks</h1>
+    <nav>
+      <a href="../index.html">General</a>
+      <a class="active" href="./Grade1.html">Grade 1</a>
+      <a href="./Grade2.html">Grade 2</a>
+      <a href="./Grade3.html">Grade 3</a>
+      <a href="./Grade4.html">Grade 4</a>
+      <a href="./Grade5.html">Grade 5</a>
+      <a href="./grade6.html">Grade 6</a>
+      <a href="./grade7.html">Grade 7</a>
+      <a href="./Grade8.html">Grade 8</a>
+      <a href="./Grade9.html">Grade 9</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Class A -->
+    <section class="todo-widget" data-list-key="todo_grade5_A">
+      <h2>Class A</h2>
+      <div class="new-task">
+        <input class="taskInput" type="text" placeholder="Add a task for Class A…" autocomplete="off" />
+        <button class="addBtn" aria-label="Add task">Add</button>
+      </div>
+      <ul class="taskList task-list" aria-live="polite"></ul>
+      <div class="footer">
+        <button class="clearCompletedBtn ghost">Clear completed</button>
+        <span class="counter">0 tasks</span>
+      </div>
+    </section>
+
+    <!-- Class B -->
+    <section class="todo-widget" data-list-key="todo_grade5_B" style="margin-top:24px">
+      <h2>Class B</h2>
+      <div class="new-task">
+        <input class="taskInput" type="text" placeholder="Add a task for Class B…" autocomplete="off" />
+        <button class="addBtn" aria-label="Add task">Add</button>
+      </div>
+      <ul class="taskList task-list" aria-live="polite"></ul>
+      <div class="footer">
+        <button class="clearCompletedBtn ghost">Clear completed</button>
+        <span class="counter">0 tasks</span>
+      </div>
+    </section>
+  </main>
+
+  <script defer src="../script.js"></script>
+</body>
+</html>

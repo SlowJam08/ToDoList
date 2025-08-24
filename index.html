@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-list-key="todo_general">
+    <header class="'app-header">
+        <h1>To-Do List</h1>
+        <nav>
+            <a href="#" class="active">General</a>
+            <a href="./Grade/Grade1.html">Grade 1</a>
+            <a href="./Grade/Grade2.html">Grade 2</a>
+            <a href="./Grade/Grade3.html">Grade 3</a>
+            <a href="./Grade/Grade4.html">Grade 4</a>
+            <a href="./Grade/Grade5.html">Grade 5</a>
+            <a href="./Grade/Grade6.html">Grade 6</a>
+            <a href="./Grade/Grade7.html">Grade 7</a>
+            <a href="./Grade/Grade8.html">Grade 8</a>
+            <a href="./Grade/Grade9.html">Grade 9</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="new-task">
+            <input id="taskInput" type="text" placeholder="Add a task… (Enter to add)" autocomplete="off" />
+            <button id="addBtn" aria-label="Add task">Add</button>
+        </section>
+
+        <section>
+            <ul id="taskList" class="task-list" aria-live="polite"></ul>
+        </section>
+
+        <footer>
+            <button id="clearCompletedBtn" class="ghost">Clear completed</button>
+            <span id="counter" class="counter">0 tasks</span>
+
+        </footer>
+
+
+    </main>
+
+    <script src="script.js?v=1"></script>
+</body>
+</html>
